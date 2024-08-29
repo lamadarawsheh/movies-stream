@@ -339,3 +339,78 @@ input:checked + .slider:before {
   
   margin-bottom: 10px;
 }
+/* Navbar style */
+
+/* Flexbox Layout for Navbar */
+.navbar-content {
+  display: flex;
+  justify-content: space-between; /* Space out header and right items */
+  width: 100%;
+}
+
+/* Navbar Header Styling */
+.navbar-header {
+  color: #ffffff;
+  font-size: 1.1rem; /* Adjust font size for the header */
+  margin: 0; /* Remove default margin */
+  /* width: auto; Adjust width */
+  /* flex-grow: 1; Allow header to take up available space */
+}
+
+/* Search Bar and Settings Button Wrapper */
+.right-items {
+  width: 50%;
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+/* Search Bar Styling */
+.search-container {
+  width: 80%;
+  display: flex;
+  align-items: center; /* Center items vertically */
+  background-color: #ffffff;
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Prevent overflow */
+  /* max-width: 464px; Maximum width for larger screens */
+  height: 100%;
+  margin-right: 10px; /* Space between search bar and button */
+}
+
+.search-bar {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  color: #A0A0A0;
+  
+  font-size: 1rem; /* Adjusted font size */
+  /* width: calc(100% - 40px); Adjust width to leave space for the icon */
+  padding: 5px;
+}
+
+#search-icon {
+  margin-left: 4%;
+  color: #A0A0A0;;
+  font-size: 1.25rem; /* Adjust icon size */
+  /* margin-right: 10px; Space between icon and input */
+}
+
+/* Settings Button Styling */
+.settings-adjust {
+  width: 11.3%;
+  height: 100%;
+  background: #FFA41C;
+  color: white;
+  border: none;
+  /* border-radius: 50%; */
+  cursor: pointer;
+  font-size: 1.25rem; /* Adjust font size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.settings-adjust svg {
+  width: 100%; /* Adjust icon size relative to the button */
+  height: 100%; /* Adjust icon size relative to the button */
+  color: white; /* Icon color */
+}
