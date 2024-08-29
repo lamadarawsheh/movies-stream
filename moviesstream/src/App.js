@@ -1,4 +1,7 @@
-import logo from './logo.svg';
+import Navbar from "./Navbar";
+import Content from "./components/Content";
+import RightSidebar from "./RightSideBar";
+import LeftSidebar from "./LeftSideBar";
 
 
 function App() {
