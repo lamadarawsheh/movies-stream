@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { FaPlus } from "react-icons/fa6";
 import { LuLayoutGrid } from "react-icons/lu";
 import { MdOutlineExplore } from "react-icons/md";
@@ -11,27 +12,53 @@ import { ProfileImg ,UserImg} from "../assets";
 
 const LeftSidebar = ({Profile,Users}) => {
     return (
-        <div className ="left-sidebar">
+        <motion.div className ="left-sidebar"
+            initial={{ x: '-100%' ,opacity:0}} 
+            animate={{ x: 0 ,opacity:1}} 
+            transition={{ type: 'spring', stiffness: 120, damping: 30, delay:.3 }}
+            
+        >
             <div className="profile-section">
-                    <button  className='profile-section-button-img'><img src={ProfileImg}></img></button>
-                    <button className="icon-button">
+                    <motion.button  className='profile-section-button-img'
+                       whileHover={{ scale: 1.05, opacity: 0.8 }}
+                       initial={{ scale: 1, opacity: 1 }}
+                    ><img src={ProfileImg}></img></motion.button>
+                    <motion.button className="icon-button"
+                       whileHover={{ scale: 1.05, opacity: 0.8 }}
+                       initial={{ scale: 1, opacity: 1 }}
+                    >
                         <LuLayoutGrid className="Profile-section-icons" />
-                    </button>
-                    <button className="icon-button">
+                    </motion.button>
+                    <motion.button className="icon-button"
+                           whileHover={{ scale: 1.05, opacity: 0.8 }}
+                           initial={{ scale: 1, opacity: 1 }}
+                    >
                         <MdOutlineExplore className="Profile-section-icons" />
-                    </button>
-                    <button className="icon-button">
+                    </motion.button>
+                    <motion.button className="icon-button"
+                       whileHover={{ scale: 1.05, opacity: 0.8 }}
+                       initial={{ scale: 1, opacity: 1 }}
+                    >
                         <CiBookmark className="Profile-section-icons" />
-                    </button>
-                    <button className="icon-button">
+                    </motion.button>
+                    <motion.button className="icon-button"
+                       whileHover={{ scale: 1.05, opacity: 0.8 }}
+                       initial={{ scale: 1, opacity: 1 }}
+                    >
                         <IoIosNotificationsOutline className="Profile-section-icons" />
-                    </button>
-                    <button className="icon-button">
+                    </motion.button>
+                    <motion.button className="icon-button"
+                       whileHover={{ scale: 1.05, opacity: 0.8 }}
+                       initial={{ scale: 1, opacity: 1 }}
+                    >
                         <CiPlay1 className="Profile-section-icons" />
-                    </button>
-                    <button className="icon-button">
+                    </motion.button>
+                    <motion.button className="icon-button"
+                       whileHover={{ scale: 1.05, opacity: 0.8 }}
+                       initial={{ scale: 1, opacity: 1 }}
+                    >
                         <RiSettings2Line className="Profile-section-icons" />
-                    </button>
+                    </motion.button>
 
 
 
@@ -39,18 +66,30 @@ const LeftSidebar = ({Profile,Users}) => {
             </div>
             <div className="users-list">
                     {Users.map((user)=>(
-                            <button className="user-button" key={user.id}><img src={UserImg}></img></button>
+                            <motion.button className="user-button" key={user.id}
+                            whileHover={{ scale: 1.05, opacity: 0.8 }}
+                            initial={{ scale: 1, opacity: 1 }}>
+                                <img src={UserImg}></img></motion.button>
                         
                         ))}
         
-                    <button className='add-user-button'><FaPlus /></button>
+                    <motion.button className='add-user-button'
+                       whileHover={{ scale: 1.05, opacity: 0.8 }}
+                       initial={{ scale: 1, opacity: 1 }}
+                    ><FaPlus /></motion.button>
             </div>
             <div className="left-sidebar-footer">
-                 <button className='Toggle-button'><FaToggleOff /></button>
-                <button className='logout-button'><MdOutlineLogout /></button>
+                 <motion.button className='Toggle-button'
+                    whileHover={{ scale: 1.05, opacity: 0.8 }}
+                    initial={{ scale: 1, opacity: 1 }}
+                 ><FaToggleOff /></motion.button>
+                <motion.button className='logout-button'
+                   whileHover={{ scale: 1.05, opacity: 0.8 }}
+                   initial={{ scale: 1, opacity: 1 }} 
+                ><MdOutlineLogout /></motion.button>
                 
             </div>
-        </div>
+        </motion.div>
     );
 };
 

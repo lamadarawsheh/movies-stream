@@ -23,7 +23,6 @@ const SearchBar = ({ onSearch }) => {
             <input
             className='search-bar'
                 placeholder="Search here..."
-                // value={}
                 
             />
       </div>
