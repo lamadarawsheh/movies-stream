@@ -280,3 +280,62 @@ input:checked + .slider {
 input:checked + .slider:before {
   transform: translateX(40px); /* Moves the circle to the right */
 }
+/* rightsidebar style */
+.mediaService-menu, .Genre-menu {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; Center vertically */
+  /* align-items: center; Center horizontally */
+  /* align-items: flex-start; */
+  width: 100%;/* Ensure the section takes the full width of the sidebar */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Add space between sections */
+.mediaService-menu {
+  /* padding-top: 12%; */
+  /* margin-top: 13.6%; */
+  /* background-color: #2200ff; */
+  margin-bottom: 20px; 
+  /* padding-top: 74px; */
+  /* margin-top: 50px; */
+  /* Space between Media Services and Genre sections */
+}
+.mediaService-menu h4{
+  /* margin-bottom: 17.8%; */
+}
+/* Ensure proper spacing and alignment of items */
+.mediaService-preview, .Genre-preview {
+  margin-bottom: 10px; /* Space between items */
+}
+
+.mediaService-item, .Genre-item {
+  display: flex;
+  align-items: center; /* Align image and text vertically */
+  margin-bottom: 8px; /* Space between items */
+}
+
+/* Media Service item image */
+.mediaService-item img {
+  width: 24px; /* Adjust the size as needed */
+  height: 24px; /* Adjust the size as needed */
+  margin-right: 8px; /* Space between image and text */
+}
+
+/* Genre item styling */
+.Genre-item a {
+  text-decoration: none; /* Remove underline */
+  color: #007bff; /* Link color */
+}
+
+.Genre-item a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+.Genre-menu{
+  /* padding: 20px; */
+  padding-top: 12%;
+}
+.Genre-menu h2{
+  
+  margin-bottom: 10px;
+}
