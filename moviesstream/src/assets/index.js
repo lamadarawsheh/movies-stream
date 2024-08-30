@@ -13,8 +13,8 @@ import SquidgameImg from './Squidgame.png';
 import RiverdaleImg from './Riverdale.png';
 import TallgirlImg from './Tallgirl.png';
 
-import ProfileImg from './Ellipse 1.png';
-import UserImg from './Ellipse 8.png';
+import ProfileImg from './profile.png';
+import UserImg from './user.png';
 
 export {
     appleTVImg,

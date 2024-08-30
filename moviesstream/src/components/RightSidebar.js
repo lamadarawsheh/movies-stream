@@ -6,24 +6,24 @@ const RightSidebar = ({mediaServices,Genres}) => {
             <div className="mediaService-menu">
                 <h4>Media Service</h4>
                 {mediaServices.map((mediaService)=>(
-                <div className="mediaService-preview" key={mediaService.id}>   
-                    <div className="mediaService-item">
-                            <img src={mediaService.img} alt="Image 1" />
+                 
+                    <div className="mediaService-item"key={mediaService.id}>
+                            <button><img src={mediaService.img} alt="Image 1" /></button>
                             <span>{mediaService.name}</span>
                        
                     </div>
-                </div>
+                
                 ))}
             </div>
 
             <div className="Genre-menu">
                 <h4 >Genre</h4>
                 {Genres.map((Genre)=>(
-                <div className="Genre-preview" key={Genre.id}>   
-                        <div className="Genre-item">
-                            <a href="http://google.com">{Genre.name}</a>
+                  
+                        <div className="Genre-item" key={Genre.id}>
+                            <button>{Genre.name}</button>
                         </div>
-                </div>
+                
                 ))}
             </div>
           

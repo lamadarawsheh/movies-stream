@@ -6,11 +6,10 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 import { CiPlay1 } from "react-icons/ci";
 import { RiSettings2Line } from "react-icons/ri";
 import { MdOutlineLogout } from "react-icons/md";
-import ToggleSwitch from './Toggleswitch';
+import { FaToggleOff } from "react-icons/fa6";
 import { ProfileImg ,UserImg} from "../assets";
 
 const LeftSidebar = ({Profile,Users}) => {
-    
     return (
         <div className ="left-sidebar">
             <div className="profile-section">
@@ -47,7 +46,7 @@ const LeftSidebar = ({Profile,Users}) => {
                     <button className='add-user-button'><FaPlus /></button>
             </div>
             <div className="left-sidebar-footer">
-                <ToggleSwitch/>
+                 <button className='Toggle-button'><FaToggleOff /></button>
                 <button className='logout-button'><MdOutlineLogout /></button>
                 
             </div>

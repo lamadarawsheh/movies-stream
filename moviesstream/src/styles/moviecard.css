@@ -1,0 +1,111 @@
+/* MovieCard.css */
+.moviecard-card {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid#181715;
+  }
+  
+  /* Position the top-left section */
+  .top-left {
+    border-radius: 5px;
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+  }
+  
+  /* Style for description and icon container */
+  .top-left-left {
+    display: flex;
+    align-items:center;
+    gap: 10px;
+    padding: 5px;
+    width: 138px;
+    height: 33px;
+  }
+  .top-left-left button {
+  border: none;
+  display: flex;
+  background-color: transparent;
+  }
+  .top-left-left span {
+  color: white;
+    }
+  
+  .top-left-right button svg{
+    color:  #FFA41C;
+    
+  }
+  .top-left-left button svg{
+      color:  white;
+  }
+  .top-left-right button{
+    border: none;
+  }
+  .top-left-right{
+  flex-direction: row-reverse;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 50px;
+  width: 138px;
+  height: 33px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+  
+  /* Icon styling */
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+  
+  /* Description text styling */
+  .description {
+    font-size: 14px; 
+    color: black;
+  }
+  
+  /* Position the bottom-left section */
+  .bottom-left {
+    position: absolute;
+    bottom: 10px; 
+    left: 10px; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  /* Styling for title and year container */
+  .title-year {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    padding: 10px;
+  
+  }
+  
+  /* Title styling */
+  .title {
+    font-size: 18px; 
+    margin: 0;
+    color: white;
+  }
+  
+  /* Year styling */
+  .year {
+    font-size: 14px; 
+    margin: 0;
+    color: white;
+  }
+  

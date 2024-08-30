@@ -22,7 +22,7 @@ const SearchBar = ({ onSearch }) => {
             <FaSearch id="search-icon" />
             <input
             className='search-bar'
-                placeholder="Type to search..."
+                placeholder="Search here..."
                 // value={}
                 
             />
