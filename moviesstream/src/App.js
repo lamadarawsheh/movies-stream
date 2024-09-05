@@ -32,9 +32,9 @@ function App() {
   ])
 
   const [Movies] = useState([
-    { title: 'Shrek3', img: ShrekImg, description: 'eeee', year: 2023, feature: 'hhhh', id: 2 },
+    { title: 'Shrek3', img: ShrekImg, description: 'shrek', year: 2023, feature: 'hhhh', id: 2 },
 
-    { title: 'Riverdale 2', img: RiverdaleImg, description: 'eeee', year: 2019, feature: 'hhhh', id: 4 },
+    { title: 'Riverdale 2', img: RiverdaleImg, description: 'Riverdale movie', year: 2019, feature: 'hhhh', id: 4 },
 
 
   ])
